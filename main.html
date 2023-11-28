@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Welcome to LearningFun</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Welcome Page -->
+    <div class="card text-center">
+        <div class="card-body">
+            <h2 class="card-title">Welcome to LearningFun!</h2>
+            <p class="card-text">Create an account for your child to start the learning adventure.</p>
+            <a href="#accountCreation" class="btn btn-primary">Create Account</a>
+        </div>
+    </div>
+
+    <!-- Account Creation Form -->
+    <div id="accountCreation" class="card mt-4">
+        <div class="card-body">
+            <h2 class="card-title">Create Your Child's Account</h2>
+            <form>
+                <div class="form-group">
+                    <label for="childName">Child's Name</label>
+                    <input type="text" class="form-control" id="childName" placeholder="Enter your child's name" required>
+                </div>
+                <div class="form-group">
+                    <label for="parentEmail">Your Email</label>
+                    <input type="email" class="form-control" id="parentEmail" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Questionnaire -->
+    <div class="card mt-4">
+        <div class="card-body">
+            <h2 class="card-title">Tell Us About Your Child</h2>
+            <form>
+                <div class="form-group">
+                    <label for="childAge">How old is your child?</label>
+                    <input type="number" class="form-control" id="childAge" required min="2" max="18">
+                </div>
+                <div class="form-group">
+                    <label for="favoriteCharacters">Favorite Characters</label>
+                    <input type="text" class="form-control" id="favoriteCharacters" placeholder="Enter favorite characters">
+                </div>
+                <div class="form-group">
+                    <label for="childPersonality">Child's Personality</label>
+                    <input type="text" class="form-control" id="childPersonality" placeholder="Describe your child's personality">
+                </div>
+                <div class="form-group">
+                    <label for="childGender">Child's Gender</label>
+                    <select class="form-control" id="childGender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Start Learning Adventure</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
