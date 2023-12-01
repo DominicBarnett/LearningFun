@@ -14,8 +14,7 @@ def createpage():
 
 @app.route('/accountcreated')
 def account_created_redirect():
-    '''redirct with a thank you message to child personality'''
-    # thank you for creating account pop up message
+    '''redirct to child personality'''
     return render_template('child_personality.html')
 
 
