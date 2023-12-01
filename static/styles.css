@@ -1,0 +1,49 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.hero-background-img {
+    position: relative;
+    background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
+    padding-top:200px;  
+    padding-bottom:200px;
+}
+  
+.hero-background-img:after {
+    content: "";
+    position: absolute;
+    background-image: url(/static/images/cdc-gsRi9cWCIB0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.5; /* Tone the image down further by giving it transparency */
+}
+navbar-brand img {
+    max-height: 40px; /* Adjust the height as needed */
+}
+#navbarlogo{
+    height: 40px;
+    width: 40px;
+}
