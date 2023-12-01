@@ -8,6 +8,10 @@ body {
 
 .card {
     border: none;
+    margin-bottom: 20px;
+}
+.card-img-top{
+    object-fit: cover;
 }
 
 .btn-primary {
