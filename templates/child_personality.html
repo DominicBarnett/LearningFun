@@ -8,34 +8,56 @@
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <!-- Questionnaire -->
-    <div class="card mt-4">
-        <div class="card-body">
-            <h2 class="card-title">Tell Us About Your Child</h2>
-            <form>
-                <div class="form-group">
-                    <label for="childAge">How old is your child?</label>
-                    <input type="number" class="form-control" id="childAge" required min="2" max="18">
-                </div>
-                <div class="form-group">
-                    <label for="favoriteCharacters">Favorite Characters</label>
-                    <input type="text" class="form-control" id="favoriteCharacters" placeholder="Enter favorite characters">
-                </div>
-                <div class="form-group">
-                    <label for="childPersonality">Child's Personality</label>
-                    <input type="text" class="form-control" id="childPersonality" placeholder="Describe your child's personality">
-                </div>
-                <div class="form-group">
-                    <label for="childGender">Child's Gender</label>
-                    <select class="form-control" id="childGender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Start Learning Adventure</button>
-            </form>
+    <main>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand navbar-light">
+            <a class="navbar-brand" href="/">Learning Fun!</a>
+            <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/createaccount">Register</a>
+            </div>
+            <div class="ml-auto">
+                <a class="navbar-brand" href="/">
+                    <img src="/static/images/LearningFun.jpg" alt="Logo" id="navbar-logo">
+                </a>
+            </div>
+        </nav>
+        <!-- Questionnaire -->
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2 class="card-title">Tell Us About Your Child</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="childAge">How old is your child?</label>
+                        <input type="number" class="form-control" id="childAge" required min="2" max="18">
+                    </div>
+                    <div class="form-group">
+                        <label for="favoriteCharacters">Favorite Characters</label>
+                        <input type="text" class="form-control" id="favoriteCharacters" placeholder="Enter favorite characters">
+                    </div>
+                    <div class="form-group">
+                        <label for="childPersonality">Child's Personality</label>
+                        <input type="text" class="form-control" id="childPersonality" placeholder="Describe your child's personality">
+                    </div>
+                    <div class="form-group">
+                        <label for="childGender">Child's Gender</label>
+                        <select class="form-control" id="childGender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Start Learning Adventure</button>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <h4>LearningFun</h4>
+        <div id="contact-info">
+            <p>(415) *** - ****</p>
+            <p>test@example.com</p>
+        </div>
+    </footer>
 </body>
 </html>

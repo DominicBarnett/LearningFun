@@ -18,12 +18,6 @@ def account_created_redirect():
     # thank you for creating account pop up message
     return render_template('child_personality.html')
 
-@app.route('/childpersonality')
-def childbackground():
-    '''Child background form'''
-    return render_template('child_personality.html')
-
-
 
 if __name__ == '__main__':
     app.config['ENV'] = 'development'
